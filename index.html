@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icon.svg">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="burger.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js" defer></script>
+    <title>Jewel.ry</title>
+</head>
+<body>
+<div class="wrapper">
+    <header id="header">
+        <div class="logo">
+            <svg width="36" height="38" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M35.246 1.53116C34.5114 0.620819 32.9971 0.596543 31.7997 1.4814C18.4742 11.3167 18.7669 10.7372 11.2919 19.0383H6.53736C6.95945 18.0062 7.94384 17.2998 9.07461 17.2176C9.41638 17.2176 9.69345 16.9459 9.69345 16.6107C9.69345 16.2755 9.41638 16.0038 9.07461 16.0038C7.36846 16.0038 5.9804 14.0981 5.9804 11.7555C5.9804 11.4204 5.70334 11.1486 5.36156 11.1486C5.01978 11.1486 4.74272 11.4204 4.74272 11.7555C4.74272 14.0981 3.35466 16.0038 1.64851 16.0038C1.30674 16.0038 1.02967 16.2755 1.02967 16.6107C1.02967 16.9459 1.30674 17.2176 1.64851 17.2176C2.98212 17.2176 4.11769 18.384 4.55212 20.0093L1.39603 23.0195C1.15546 23.2466 1.01907 23.5597 1.01802 23.8871C1.01697 24.2146 1.15135 24.5285 1.39046 24.757L7.84187 30.9104C4.92888 31.5374 2.29185 33.0498 0.306247 35.2321C-0.0137546 35.5907 -0.0901272 36.0998 0.110993 36.5337C0.312112 36.9675 0.753505 37.2458 1.23946 37.2451H3.93204C4.21347 37.2442 4.48606 37.1487 4.70435 36.9745C8.32883 34.1005 13.5081 34.1005 17.1325 36.9745C17.3511 37.1486 17.6239 37.2441 17.9055 37.2451H20.598C21.084 37.2458 21.5254 36.9675 21.7265 36.5337C21.9276 36.0998 21.8513 35.5907 21.5313 35.2321C19.5455 33.0497 16.9082 31.5373 13.995 30.9104L20.4415 24.7649C20.6825 24.5381 20.8192 24.2249 20.8203 23.8973C20.8213 23.5697 20.6866 23.2557 20.447 23.0274L19.124 21.7657C24.0326 17.7183 25.1267 16.1822 34.8939 4.88365C35.7911 3.98206 35.937 2.59319 35.246 1.53116ZM32.5441 2.45122C32.8616 2.20233 33.252 2.05981 33.6581 2.0446C34.7293 2.0446 34.548 3.21044 33.7045 3.89259C20.2428 14.7712 21.4341 14.0927 13.2165 18.7348C19.6258 11.6159 20.4774 11.3574 32.5441 2.45122ZM18.9507 23.2865C15.3329 23.2865 15.789 23.3242 15.7216 23.1991L14.2797 20.2521H15.7649L18.9507 23.2865ZM10.9175 32.1472L9.06594 30.3872C9.14206 30.3969 9.21818 30.4139 9.29429 30.4218C10.4483 30.5578 11.6155 30.5466 12.7666 30.3884L10.9175 32.1472ZM6.08684 24.5003C6.18709 24.7467 5.51689 23.3618 8.29301 29.0375C8.00401 28.9768 7.71687 28.9082 7.43158 28.8293L2.8862 24.5003H6.08684ZM12.0723 29.2426C11.3049 29.3124 10.5326 29.3124 9.76523 29.2426L7.44643 24.5003H14.3917L12.0723 29.2426ZM14.3985 28.8311C14.1138 28.91 13.8279 28.9816 13.5445 29.0387C15.0718 25.9162 15.7346 24.5647 15.7599 24.5003H18.9426L14.3985 28.8311ZM16.6053 19.3672C16.2018 19.0031 15.8627 19.0383 15.1597 19.0383C17.7192 17.592 16.6709 18.1886 17.8498 17.4895C17.4228 18.1049 17.01 18.7348 16.6053 19.3672ZM10.199 20.2521L9.78813 20.7078C9.58804 20.9306 9.58159 21.2626 9.7729 21.4926C9.9642 21.7226 10.2971 21.7832 10.5598 21.6358L12.9275 20.3006L14.3917 23.2865H7.44643L8.93165 20.2521H10.199ZM7.55906 20.2521C5.67779 24.0961 6.17905 23.0626 6.08746 23.2865H2.89362L4.75014 21.5132C4.76347 21.8464 5.04968 22.1059 5.38941 22.0928C5.72913 22.0797 5.99373 21.799 5.9804 21.4659C5.9802 21.0579 6.02397 20.651 6.11098 20.2521H7.55906ZM3.6319 16.6107C4.38719 16.0962 4.98518 15.3895 5.36156 14.5667C5.73879 15.3899 6.33788 16.0966 7.09431 16.6107C6.33788 17.1248 5.73879 17.8315 5.36156 18.6547C4.98518 17.8319 4.38719 17.1252 3.6319 16.6107ZM20.598 36.0313H17.911C13.8349 32.797 8.00812 32.797 3.93204 36.0313L1.22956 36.0404C3.23485 33.8393 5.96101 32.394 8.93722 31.9542L10.0598 33.0242C10.543 33.4751 11.3027 33.473 11.7833 33.0193L12.8972 31.9542C15.8701 32.3918 18.5939 33.8339 20.598 36.0313ZM18.2335 20.9154L17.5162 20.2308C18.5014 18.6669 19.5658 17.1442 20.6927 15.6991C23.4503 13.8378 24.6682 12.7678 30.6028 7.97093C25.2035 14.2147 23.2807 16.7527 18.2335 20.9154Z" fill="#4799A5"/>
+                <path d="M23.9268 25.714C23.585 25.714 23.308 25.9857 23.308 26.3209V27.5347C23.308 27.8698 23.585 28.1415 23.9268 28.1415C24.2686 28.1415 24.5456 27.8698 24.5456 27.5347V26.3209C24.5456 25.9857 24.2686 25.714 23.9268 25.714Z" fill="#4799A5"/>
+                <path d="M23.308 31.176C23.308 31.5112 23.585 31.7829 23.9268 31.7829C24.2686 31.7829 24.5456 31.5112 24.5456 31.176V29.9622C24.5456 29.6271 24.2686 29.3553 23.9268 29.3553C23.585 29.3553 23.308 29.6271 23.308 29.9622V31.176Z" fill="#4799A5"/>
+                <path d="M25.1645 29.3553H26.4022C26.7439 29.3553 27.021 29.0836 27.021 28.7484C27.021 28.4133 26.7439 28.1415 26.4022 28.1415H25.1645C24.8227 28.1415 24.5456 28.4133 24.5456 28.7484C24.5456 29.0836 24.8227 29.3553 25.1645 29.3553Z" fill="#4799A5"/>
+                <path d="M22.6892 28.1415H21.4515C21.1097 28.1415 20.8326 28.4133 20.8326 28.7484C20.8326 29.0836 21.1097 29.3553 21.4515 29.3553H22.6892C23.0309 29.3553 23.308 29.0836 23.308 28.7484C23.308 28.4133 23.0309 28.1415 22.6892 28.1415Z" fill="#4799A5"/>
+                <path d="M12.4782 10.2381C12.6423 10.2381 12.7997 10.1741 12.9157 10.0603L13.844 9.14998C14.0785 8.91184 14.0752 8.53332 13.8365 8.29922C13.5978 8.06512 13.2118 8.06183 12.969 8.29182L12.0407 9.20217C11.8638 9.37574 11.8109 9.63673 11.9066 9.86348C12.0024 10.0902 12.228 10.2381 12.4782 10.2381Z" fill="#4799A5"/>
+                <path d="M9.25593 12.7914C9.49759 13.0283 9.88931 13.0283 10.131 12.7914L11.0592 11.881C11.2938 11.6429 11.2904 11.2644 11.0517 11.0303C10.813 10.7962 10.427 10.7929 10.1842 11.0229L9.25593 11.9332C9.01434 12.1702 9.01434 12.5544 9.25593 12.7914Z" fill="#4799A5"/>
+                <path d="M12.0407 11.881C13.0352 12.8557 13.0779 12.9692 13.4065 12.9692C13.6568 12.9691 13.8824 12.8213 13.9781 12.5945C14.0739 12.3678 14.021 12.1068 13.844 11.9332L12.9158 11.0229C12.6729 10.7929 12.287 10.7962 12.0483 11.0303C11.8096 11.2644 11.8062 11.6429 12.0407 11.881Z" fill="#4799A5"/>
+                <path d="M10.1842 10.0603C10.427 10.2903 10.813 10.287 11.0517 10.0529C11.2904 9.81882 11.2937 9.4403 11.0592 9.20216L10.1309 8.29182C9.88812 8.06183 9.50215 8.06512 9.26344 8.29922C9.02473 8.53332 9.02138 8.91184 9.2559 9.14997L10.1842 10.0603Z" fill="#4799A5"/>
+            </svg> 
+            <div class="logo_txt">
+                <p>jewel.ry</p>
+                <p>Украшения ручной работы</p>
+            </div>               
+        </div>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="#">Каталог</a>
+            <a href="#">Золото</a>
+            <a href="#">Серебро</a>
+            <a href="#">О нас</a>
+            <a href="#">Контакты</a>
+        </nav>
+        <div class="busket">
+            <svg width="33" height="35" viewBox="0 0 33 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30.4891 11.2228H28.7784C28.7654 11.2074 28.7531 11.1915 28.7391 11.1767L19.4131 1.28536C18.9929 0.839654 18.3115 0.839654 17.8913 1.28536C17.471 1.73106 17.471 2.45369 17.8913 2.89939L25.739 11.2228H7.2609L15.1087 2.89939C15.5289 2.45369 15.5289 1.73106 15.1087 1.28536C14.6885 0.839654 14.0071 0.839654 13.5869 1.28536L4.2608 11.1767C4.24682 11.1915 4.23457 11.2075 4.22149 11.2228H2.5109C1.12638 11.2228 0 12.4175 0 13.8858V15.4076C0 16.8063 1.0219 17.9565 2.31541 18.0627L4.37791 31.1879C4.6385 32.8457 5.97764 34.0489 7.56228 34.0489H25.7529C27.3491 34.0489 28.7229 32.7851 28.9487 31.1092L30.7062 18.0608C31.9895 17.9436 32.9999 16.7984 32.9999 15.4076V13.8858C33 12.4175 31.8736 11.2228 30.4891 11.2228ZM30.8478 15.4076C30.8478 15.6174 30.6869 15.788 30.4892 15.788C30.1588 15.788 20.1997 15.788 19.7283 15.788C19.1341 15.788 18.6522 16.299 18.6522 16.9293C18.6522 17.5596 19.134 18.0707 19.7283 18.0707H28.5311L26.8183 30.7865C26.743 31.3451 26.2851 31.7663 25.7529 31.7663H7.56228C7.03409 31.7663 6.58769 31.3653 6.50081 30.8127L4.49857 18.0707H13.2717C13.866 18.0707 14.3478 17.5597 14.3478 16.9293C14.3478 16.2991 13.8661 15.788 13.2717 15.788C12.7996 15.788 2.83987 15.788 2.5109 15.788C2.31309 15.788 2.15222 15.6173 2.15222 15.4076V13.8858C2.15222 13.676 2.31316 13.5054 2.5109 13.5054H30.4892C30.687 13.5054 30.8478 13.6761 30.8478 13.8858V15.4076Z" fill="#E8C467"/>
+                <path d="M10.0435 20.3532C9.44926 20.3532 8.96741 20.8642 8.96741 21.4946V28.3424C8.96741 28.9727 9.44919 29.4837 10.0435 29.4837C10.6378 29.4837 11.1196 28.9727 11.1196 28.3424V21.4945C11.1196 20.8642 10.6378 20.3532 10.0435 20.3532Z" fill="#E8C467"/>
+                <path d="M16.5 20.3532C15.9057 20.3532 15.4239 20.8642 15.4239 21.4946V28.3424C15.4239 28.9727 15.9057 29.4837 16.5 29.4837C17.0943 29.4837 17.5761 28.9727 17.5761 28.3424V21.4945C17.5761 20.8642 17.0943 20.3532 16.5 20.3532Z" fill="#E8C467"/>
+                <path d="M22.9565 20.3532C22.3622 20.3532 21.8804 20.8642 21.8804 21.4946V28.3424C21.8804 28.9727 22.3622 29.4837 22.9565 29.4837C23.5508 29.4837 24.0326 28.9727 24.0326 28.3424V21.4945C24.0326 20.8642 23.5508 20.3532 22.9565 20.3532Z" fill="#E8C467"/>
+            </svg>
+            <div>
+                <p>25 396грн</p>
+                <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 0H0L3 3L6 0Z" fill="#11282C"/>
+                </svg>                    
+            </div>             
+        </div>
+        <button class="burger_btn" id="burger_btn">
+            <div class="icon-left"></div>
+            <div class="icon-right"></div>
+        </button>
+        <div class="burger_menu" id="burger_menu">
+            <div class="black_bg" id="bg"></div>
+            <div class="close_burger" id="close_burger"></div>
+            <nav id="burger_nav">
+                <a href="#">Главная</a>
+                <a href="#">Каталог</a>
+                <a href="#">Золото</a>
+                <a href="#">Серебро</a>
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+                <p>+(380)66-654-32-21</p>
+                <div class="busket">
+                    <svg width="33" height="35" viewBox="0 0 33 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30.4891 11.2228H28.7784C28.7654 11.2074 28.7531 11.1915 28.7391 11.1767L19.4131 1.28536C18.9929 0.839654 18.3115 0.839654 17.8913 1.28536C17.471 1.73106 17.471 2.45369 17.8913 2.89939L25.739 11.2228H7.2609L15.1087 2.89939C15.5289 2.45369 15.5289 1.73106 15.1087 1.28536C14.6885 0.839654 14.0071 0.839654 13.5869 1.28536L4.2608 11.1767C4.24682 11.1915 4.23457 11.2075 4.22149 11.2228H2.5109C1.12638 11.2228 0 12.4175 0 13.8858V15.4076C0 16.8063 1.0219 17.9565 2.31541 18.0627L4.37791 31.1879C4.6385 32.8457 5.97764 34.0489 7.56228 34.0489H25.7529C27.3491 34.0489 28.7229 32.7851 28.9487 31.1092L30.7062 18.0608C31.9895 17.9436 32.9999 16.7984 32.9999 15.4076V13.8858C33 12.4175 31.8736 11.2228 30.4891 11.2228ZM30.8478 15.4076C30.8478 15.6174 30.6869 15.788 30.4892 15.788C30.1588 15.788 20.1997 15.788 19.7283 15.788C19.1341 15.788 18.6522 16.299 18.6522 16.9293C18.6522 17.5596 19.134 18.0707 19.7283 18.0707H28.5311L26.8183 30.7865C26.743 31.3451 26.2851 31.7663 25.7529 31.7663H7.56228C7.03409 31.7663 6.58769 31.3653 6.50081 30.8127L4.49857 18.0707H13.2717C13.866 18.0707 14.3478 17.5597 14.3478 16.9293C14.3478 16.2991 13.8661 15.788 13.2717 15.788C12.7996 15.788 2.83987 15.788 2.5109 15.788C2.31309 15.788 2.15222 15.6173 2.15222 15.4076V13.8858C2.15222 13.676 2.31316 13.5054 2.5109 13.5054H30.4892C30.687 13.5054 30.8478 13.6761 30.8478 13.8858V15.4076Z" fill="#E8C467"/>
+                        <path d="M10.0435 20.3532C9.44926 20.3532 8.96741 20.8642 8.96741 21.4946V28.3424C8.96741 28.9727 9.44919 29.4837 10.0435 29.4837C10.6378 29.4837 11.1196 28.9727 11.1196 28.3424V21.4945C11.1196 20.8642 10.6378 20.3532 10.0435 20.3532Z" fill="#E8C467"/>
+                        <path d="M16.5 20.3532C15.9057 20.3532 15.4239 20.8642 15.4239 21.4946V28.3424C15.4239 28.9727 15.9057 29.4837 16.5 29.4837C17.0943 29.4837 17.5761 28.9727 17.5761 28.3424V21.4945C17.5761 20.8642 17.0943 20.3532 16.5 20.3532Z" fill="#E8C467"/>
+                        <path d="M22.9565 20.3532C22.3622 20.3532 21.8804 20.8642 21.8804 21.4946V28.3424C21.8804 28.9727 22.3622 29.4837 22.9565 29.4837C23.5508 29.4837 24.0326 28.9727 24.0326 28.3424V21.4945C24.0326 20.8642 23.5508 20.3532 22.9565 20.3532Z" fill="#E8C467"/>
+                    </svg>
+                    <div>
+                        <p>25 396грн</p>
+                        <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 0H0L3 3L6 0Z" fill="#FFF"/>
+                        </svg>                    
+                    </div>
+                </div>    
+            </nav>
+        </div>
+    </header>
+</div>
+
+<div class="wrapper">
+    <div class="under_header">
+        <div class="first">
+            <h1 data-aos="fade-up-right" data-aos-delay="550"
+            data-aos-duration="500">Украшения которых нет ни у кого!</h1>
+            <p data-aos="fade-up-right" data-aos-delay="950"
+            data-aos-duration="700">
+                Мы можем сделать украшения лично под вас и ваши пожелания.Для этого вам нужно просто заказать звонок используя кнопку ниже.Наши опытные ювелиры будут очень рады помочь вам сделать ваши украшения неповторимыми и уникальными.
+            </p>
+            <div data-aos="fade-up-right" data-aos-delay="1350"
+            data-aos-duration="700">
+                <a href="#">Заказать звонок</a>
+            </div>
+        </div>
+        <div class="second" data-aos="fade-up-left" data-aos-delay="550"
+        data-aos-duration="500">
+            <div class="txt">
+                <p>Деревянное кольцо с белым сапфиром</p>
+                <p>3 560 грн.</p>
+                <a href="#">Узнать больше 
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4.73333H14M14 4.73333L10.8889 1M14 4.73333L10.8889 8" stroke="#B1954E"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="new_txt">NEW</div>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="new_collection">
+        <div class="txt">
+            <h2 data-aos="fade-up" data-aos-delay="350"
+            data-aos-duration="400">Новая коллекция</h2>
+            <nav>
+                <a href="#" data-aos="fade-up" data-aos-delay="550"
+            data-aos-duration="400">Все</a>
+                <a href="#" data-aos="fade-up" data-aos-delay="650"
+            data-aos-duration="400">Дерево</a>
+                <a href="#" data-aos="fade-up" data-aos-delay="750"
+            data-aos-duration="400">Золото</a>
+                <a href="#" data-aos="fade-up" data-aos-delay="850"
+            data-aos-duration="400">Серебро</a>
+            </nav>
+        </div>
+        <div class="swiper_block">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                            <div class="img_container">
+                                <img src="assets/swiper_photo/1st.png" alt="Photo" loading="lazy">
+                            </div>
+                            <div class="txt">
+                                <p>Сережки Звездочки</p>
+                                <div class="price">
+                                    <div class="matterial">
+                                        <p>Материал:</p>
+                                        <p>Проба:</p>
+                                        <p>Страна производитель:</p>
+                                    </div>
+                                    <div class="about_matterial">
+                                        <p>Серебро</p>
+                                        <p>925</p>
+                                        <p>Украина</p>
+                                    </div>
+                                </div>
+                                <div class="final_price">
+                                    <p>640 грн.</p>
+                                    <button>В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                            <div class="img_container">
+                                <img src="assets/swiper_photo/3d.png" alt="Photo" loading="lazy">
+                            </div>
+                            <div class="txt">
+                                <p>Сережки Даша</p>
+                                <div class="price">
+                                    <div class="matterial">
+                                        <p>Материал:</p>
+                                        <p>Цвет:</p>
+                                        <p>Страна производитель:</p>
+                                    </div>
+                                    <div class="about_matterial">
+                                        <p>Сапфир</p>
+                                        <p>Синий</p>
+                                        <p>Украина</p>
+                                    </div>
+                                </div>
+                                <div class="final_price">
+                                    <p>640 грн.</p>
+                                    <button>В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                            <div class="img_container">
+                                <img src="assets/swiper_photo/2d.png" alt="Photo" loading="lazy">
+                            </div>
+                            <div class="txt">
+                                <p>Сережки Тучки
+                                </p>
+                                <div class="price">
+                                    <div class="matterial">
+                                        <p>Материал:</p>
+                                        <p>Проба:</p>
+                                        <p>Страна производитель:</p>
+                                    </div>
+                                    <div class="about_matterial">
+                                        <p>Золото</p>
+                                        <p>825</p>
+                                        <p>Россия</p>
+                                    </div>
+                                </div>
+                                <div class="final_price">
+                                    <p>340 грн.</p>
+                                    <button>В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="catalog">
+        <div class="txt">
+            <h3 data-aos="fade-up" data-aos-delay="350"
+            data-aos-duration="400">Каталог товаров</h3>
+            <nav>
+                <a href="#" data-aos="fade-up" data-aos-delay="550"
+            data-aos-duration="400">Все товары</a>
+                <a href="#" data-aos="fade-up" data-aos-delay="650"
+            data-aos-duration="400">Серьги</a>
+                <a href="#" data-aos="fade-up" data-aos-delay="750"
+            data-aos-duration="400">Браслеты</a>
+                <a href="#" data-aos="fade-up" data-aos-delay="850"
+            data-aos-duration="400">Подвески</a>
+            <a href="#" data-aos="fade-up" data-aos-delay="950"
+                data-aos-duration="400">Цепочки
+            </a>
+            </nav>
+        </div>
+        <div class="cards_container">
+            <div class="card">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/1st.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Кольцо Шикарная Ночь</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Серебро</p>
+                                <p>925</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>310 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/9th.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Сережки Пушок</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Золото</p>
+                                <p>385</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>6340 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/3d.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Браслет Нежный Жемчуг</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Серебро</p>
+                                <p>995</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>810 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/4th.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Кольцо Фантазия</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Золото</p>
+                                <p>385</p>
+                                <p>Беларусь</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>2890 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/5th.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Цепочка Темперамент</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Золото</p>
+                                <p>385</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>4300 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/6th.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Браслет Цепь</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Золото</p>
+                                <p>725</p>
+                                <p>Беларусь</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>3760 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/7th.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Кольцо Snake</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Серебро</p>
+                                <p>225</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>665 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/8th.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Сережки Империя</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Серебро</p>
+                                <p>425</p>
+                                <p>Беларусь</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>420 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/9th.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Сережки Даша</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Серебро</p>
+                                <p>925</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>640 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/1st.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Сережки Даша</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Серебро</p>
+                                <p>925</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>640 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="more_card" id="more_card">Показать еще 18</button>
+        <div class="cards_container close" id="load_card_container">
+            <div class="card card_open">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/swiper_photo/3d.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Сережки Даша</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Цвет:</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Сапфир</p>
+                                <p>Синий</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>640 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_open">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/swiper_photo/3d.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Сережки Даша</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Цвет:</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Сапфир</p>
+                                <p>Синий</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>640 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_open">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/swiper_photo/3d.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Сережки Даша</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Цвет:</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Сапфир</p>
+                                <p>Синий</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>640 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_open">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/swiper_photo/3d.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Сережки Даша</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Цвет:</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Сапфир</p>
+                                <p>Синий</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>640 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_open">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/swiper_photo/3d.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Сережки Даша</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Цвет:</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Сапфир</p>
+                                <p>Синий</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>640 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_open">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/swiper_photo/3d.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Сережки Даша</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Цвет:</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Сапфир</p>
+                                <p>Синий</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>640 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_open">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/6th.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Подвеска Лист</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Золото</p>
+                                <p>429</p>
+                                <p>Беларусь</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>3640 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_open">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/1st.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Кольцо Шикарная Ночь</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Серебро</p>
+                                <p>925</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>310 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_open">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/2d.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Подвеска Нежность</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Золото</p>
+                                <p>768</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>6 350 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_open">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/3d.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Браслет Нежный Жемчуг</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Серебро</p>
+                                <p>935</p>
+                                <p>Беларусь</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>815 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_open">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/4th.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Браслет Нежный Жемчуг</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Золото</p>
+                                <p>385</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>2890 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_open">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/5th.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Цепочка Темперамент</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Серебро</p>
+                                <p>925</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>1200 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_open">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/6th.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Подвеска Лист</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Золото</p>
+                                <p>429</p>
+                                <p>Беларусь</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>3640 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_open">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/7th.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Браслет Цепь</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Золото</p>
+                                <p>385</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>4620 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_open">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/collection_photo/8th.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Кольцо Snake</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Проба</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Серебро</p>
+                                <p>425</p>
+                                <p>Россия</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>340 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_open">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/swiper_photo/3d.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Сережки Даша</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Цвет:</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Сапфир</p>
+                                <p>Синий</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>640 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_open">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/swiper_photo/3d.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Сережки Даша</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Цвет:</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Сапфир</p>
+                                <p>Синий</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>640 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_open">
+                <div class="card-box">
+                    <div class="img_container">
+                        <img src="assets/swiper_photo/3d.png" alt="Photo" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <p>Сережки Даша</p>
+                        <div class="price">
+                            <div class="matterial">
+                                <p>Материал:</p>
+                                <p>Цвет:</p>
+                                <p>Страна производитель:</p>
+                            </div>
+                            <div class="about_matterial">
+                                <p>Сапфир</p>
+                                <p>Синий</p>
+                                <p>Украина</p>
+                            </div>
+                        </div>
+                        <div class="final_price">
+                            <p>640 грн.</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="above_footer">
+    <div class="wrapper">
+        <h3>Как мы работаем?</h3>
+        <div class="above_footer_block">
+            <div class="first">
+                <div data-aos="fade-up" data-aos-delay="450"
+            data-aos-duration="400">
+                    <p>1</p>
+                    <p>Перезваниваем вам в течении дня и записываем все ваши пожелания</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="650"
+            data-aos-duration="400">
+                    <p>2</p>
+                    <p>На основе ваших желаний отправляем вам образец деталей и фото готовых изделий для примера</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="850"
+            data-aos-duration="400">
+                    <p>3</p>
+                    <p>На каждом этапе разработки украшения отправляем вам детальный фото для уточнения</p>
+                </div>
+            </div>
+            <div class="second">
+                <div data-aos="fade-up" data-aos-delay="1050" data-aos-duration="400">
+                    <p>4</p>
+                    <p>Отправляем фото готового украшения</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="1250" data-aos-duration="400">
+                    <p>5</p>
+                    <p>Отправляем ваш заказ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="wrapper">
+        <div class="footer_container">
+            <div class="logo">
+                <svg width="36" height="38" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.246 1.53116C34.5114 0.620819 32.9971 0.596543 31.7997 1.4814C18.4742 11.3167 18.7669 10.7372 11.2919 19.0383H6.53736C6.95945 18.0062 7.94384 17.2998 9.07461 17.2176C9.41638 17.2176 9.69345 16.9459 9.69345 16.6107C9.69345 16.2755 9.41638 16.0038 9.07461 16.0038C7.36846 16.0038 5.9804 14.0981 5.9804 11.7555C5.9804 11.4204 5.70334 11.1486 5.36156 11.1486C5.01978 11.1486 4.74272 11.4204 4.74272 11.7555C4.74272 14.0981 3.35466 16.0038 1.64851 16.0038C1.30674 16.0038 1.02967 16.2755 1.02967 16.6107C1.02967 16.9459 1.30674 17.2176 1.64851 17.2176C2.98212 17.2176 4.11769 18.384 4.55212 20.0093L1.39603 23.0195C1.15546 23.2466 1.01907 23.5597 1.01802 23.8871C1.01697 24.2146 1.15135 24.5285 1.39046 24.757L7.84187 30.9104C4.92888 31.5374 2.29185 33.0498 0.306247 35.2321C-0.0137546 35.5907 -0.0901272 36.0998 0.110993 36.5337C0.312112 36.9675 0.753505 37.2458 1.23946 37.2451H3.93204C4.21347 37.2442 4.48606 37.1487 4.70435 36.9745C8.32883 34.1005 13.5081 34.1005 17.1325 36.9745C17.3511 37.1486 17.6239 37.2441 17.9055 37.2451H20.598C21.084 37.2458 21.5254 36.9675 21.7265 36.5337C21.9276 36.0998 21.8513 35.5907 21.5313 35.2321C19.5455 33.0497 16.9082 31.5373 13.995 30.9104L20.4415 24.7649C20.6825 24.5381 20.8192 24.2249 20.8203 23.8973C20.8213 23.5697 20.6866 23.2557 20.447 23.0274L19.124 21.7657C24.0326 17.7183 25.1267 16.1822 34.8939 4.88365C35.7911 3.98206 35.937 2.59319 35.246 1.53116ZM32.5441 2.45122C32.8616 2.20233 33.252 2.05981 33.6581 2.0446C34.7293 2.0446 34.548 3.21044 33.7045 3.89259C20.2428 14.7712 21.4341 14.0927 13.2165 18.7348C19.6258 11.6159 20.4774 11.3574 32.5441 2.45122ZM18.9507 23.2865C15.3329 23.2865 15.789 23.3242 15.7216 23.1991L14.2797 20.2521H15.7649L18.9507 23.2865ZM10.9175 32.1472L9.06594 30.3872C9.14206 30.3969 9.21818 30.4139 9.29429 30.4218C10.4483 30.5578 11.6155 30.5466 12.7666 30.3884L10.9175 32.1472ZM6.08684 24.5003C6.18709 24.7467 5.51689 23.3618 8.29301 29.0375C8.00401 28.9768 7.71687 28.9082 7.43158 28.8293L2.8862 24.5003H6.08684ZM12.0723 29.2426C11.3049 29.3124 10.5326 29.3124 9.76523 29.2426L7.44643 24.5003H14.3917L12.0723 29.2426ZM14.3985 28.8311C14.1138 28.91 13.8279 28.9816 13.5445 29.0387C15.0718 25.9162 15.7346 24.5647 15.7599 24.5003H18.9426L14.3985 28.8311ZM16.6053 19.3672C16.2018 19.0031 15.8627 19.0383 15.1597 19.0383C17.7192 17.592 16.6709 18.1886 17.8498 17.4895C17.4228 18.1049 17.01 18.7348 16.6053 19.3672ZM10.199 20.2521L9.78813 20.7078C9.58804 20.9306 9.58159 21.2626 9.7729 21.4926C9.9642 21.7226 10.2971 21.7832 10.5598 21.6358L12.9275 20.3006L14.3917 23.2865H7.44643L8.93165 20.2521H10.199ZM7.55906 20.2521C5.67779 24.0961 6.17905 23.0626 6.08746 23.2865H2.89362L4.75014 21.5132C4.76347 21.8464 5.04968 22.1059 5.38941 22.0928C5.72913 22.0797 5.99373 21.799 5.9804 21.4659C5.9802 21.0579 6.02397 20.651 6.11098 20.2521H7.55906ZM3.6319 16.6107C4.38719 16.0962 4.98518 15.3895 5.36156 14.5667C5.73879 15.3899 6.33788 16.0966 7.09431 16.6107C6.33788 17.1248 5.73879 17.8315 5.36156 18.6547C4.98518 17.8319 4.38719 17.1252 3.6319 16.6107ZM20.598 36.0313H17.911C13.8349 32.797 8.00812 32.797 3.93204 36.0313L1.22956 36.0404C3.23485 33.8393 5.96101 32.394 8.93722 31.9542L10.0598 33.0242C10.543 33.4751 11.3027 33.473 11.7833 33.0193L12.8972 31.9542C15.8701 32.3918 18.5939 33.8339 20.598 36.0313ZM18.2335 20.9154L17.5162 20.2308C18.5014 18.6669 19.5658 17.1442 20.6927 15.6991C23.4503 13.8378 24.6682 12.7678 30.6028 7.97093C25.2035 14.2147 23.2807 16.7527 18.2335 20.9154Z" fill="#E0FBFF"/>
+                    <path d="M23.9268 25.714C23.585 25.714 23.308 25.9857 23.308 26.3209V27.5347C23.308 27.8698 23.585 28.1415 23.9268 28.1415C24.2686 28.1415 24.5456 27.8698 24.5456 27.5347V26.3209C24.5456 25.9857 24.2686 25.714 23.9268 25.714Z" fill="#E0FBFF"/>
+                    <path d="M23.308 31.176C23.308 31.5112 23.585 31.7829 23.9268 31.7829C24.2686 31.7829 24.5456 31.5112 24.5456 31.176V29.9622C24.5456 29.6271 24.2686 29.3553 23.9268 29.3553C23.585 29.3553 23.308 29.6271 23.308 29.9622V31.176Z" fill="#E0FBFF"/>
+                    <path d="M25.1645 29.3553H26.4022C26.7439 29.3553 27.021 29.0836 27.021 28.7484C27.021 28.4133 26.7439 28.1415 26.4022 28.1415H25.1645C24.8227 28.1415 24.5456 28.4133 24.5456 28.7484C24.5456 29.0836 24.8227 29.3553 25.1645 29.3553Z" fill="#E0FBFF"/>
+                    <path d="M22.6892 28.1415H21.4515C21.1097 28.1415 20.8326 28.4133 20.8326 28.7484C20.8326 29.0836 21.1097 29.3553 21.4515 29.3553H22.6892C23.0309 29.3553 23.308 29.0836 23.308 28.7484C23.308 28.4133 23.0309 28.1415 22.6892 28.1415Z" fill="#E0FBFF"/>
+                    <path d="M12.4782 10.2381C12.6423 10.2381 12.7997 10.1741 12.9157 10.0603L13.844 9.14998C14.0785 8.91184 14.0752 8.53332 13.8365 8.29922C13.5978 8.06512 13.2118 8.06183 12.969 8.29182L12.0407 9.20217C11.8638 9.37574 11.8109 9.63673 11.9066 9.86348C12.0024 10.0902 12.228 10.2381 12.4782 10.2381Z" fill="#E0FBFF"/>
+                    <path d="M9.25593 12.7914C9.49759 13.0283 9.88931 13.0283 10.131 12.7914L11.0592 11.881C11.2938 11.6429 11.2904 11.2644 11.0517 11.0303C10.813 10.7962 10.427 10.7929 10.1842 11.0229L9.25593 11.9332C9.01434 12.1702 9.01434 12.5544 9.25593 12.7914Z" fill="#E0FBFF"/>
+                    <path d="M12.0407 11.881C13.0352 12.8557 13.0779 12.9692 13.4065 12.9692C13.6568 12.9691 13.8824 12.8213 13.9781 12.5945C14.0739 12.3678 14.021 12.1068 13.844 11.9332L12.9158 11.0229C12.6729 10.7929 12.287 10.7962 12.0483 11.0303C11.8096 11.2644 11.8062 11.6429 12.0407 11.881Z" fill="#E0FBFF"/>
+                    <path d="M10.1842 10.0603C10.427 10.2903 10.813 10.287 11.0517 10.0529C11.2904 9.81882 11.2937 9.4403 11.0592 9.20216L10.1309 8.29182C9.88812 8.06183 9.50215 8.06512 9.26344 8.29922C9.02473 8.53332 9.02138 8.91184 9.2559 9.14997L10.1842 10.0603Z" fill="#E0FBFF"/>
+                </svg> 
+                <div class="logo_txt">
+                    <p>jewel.ry</p>
+                    <p>Украшения ручной работы</p>
+                </div>               
+            </div>
+            <div class="nav">
+                <a href="#">Главная</a>
+                <a href="#">Каталог</a>
+                <a href="#">Золото</a>
+                <a href="#">Серебро</a>
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+            </div>
+            <a href="#" class="call">Заказать звонок</a>
+            <p class="tel">+(380)66-654-32-21</p>
+            <a href="#" id="#header" class="row">
+                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.0607 0.93934C12.4749 0.353553 11.5251 0.353553 10.9393 0.93934L1.3934 10.4853C0.807612 11.0711 0.807612 12.0208 1.3934 12.6066C1.97918 13.1924 2.92893 13.1924 3.51472 12.6066L12 4.12132L20.4853 12.6066C21.0711 13.1924 22.0208 13.1924 22.6066 12.6066C23.1924 12.0208 23.1924 11.0711 22.6066 10.4853L13.0607 0.93934ZM13.5 26L13.5 2H10.5L10.5 26H13.5Z" fill="white"/>
+                </svg>
+            </a>
+            <div class="busket">
+                <svg width="33" height="35" viewBox="0 0 33 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.4891 11.2228H28.7784C28.7654 11.2074 28.7531 11.1915 28.7391 11.1767L19.4131 1.28536C18.9929 0.839654 18.3115 0.839654 17.8913 1.28536C17.471 1.73106 17.471 2.45369 17.8913 2.89939L25.739 11.2228H7.2609L15.1087 2.89939C15.5289 2.45369 15.5289 1.73106 15.1087 1.28536C14.6885 0.839654 14.0071 0.839654 13.5869 1.28536L4.2608 11.1767C4.24682 11.1915 4.23457 11.2075 4.22149 11.2228H2.5109C1.12638 11.2228 0 12.4175 0 13.8858V15.4076C0 16.8063 1.0219 17.9565 2.31541 18.0627L4.37791 31.1879C4.6385 32.8457 5.97764 34.0489 7.56228 34.0489H25.7529C27.3491 34.0489 28.7229 32.7851 28.9487 31.1092L30.7062 18.0608C31.9895 17.9436 32.9999 16.7984 32.9999 15.4076V13.8858C33 12.4175 31.8736 11.2228 30.4891 11.2228ZM30.8478 15.4076C30.8478 15.6174 30.6869 15.788 30.4892 15.788C30.1588 15.788 20.1997 15.788 19.7283 15.788C19.1341 15.788 18.6522 16.299 18.6522 16.9293C18.6522 17.5596 19.134 18.0707 19.7283 18.0707H28.5311L26.8183 30.7865C26.743 31.3451 26.2851 31.7663 25.7529 31.7663H7.56228C7.03409 31.7663 6.58769 31.3653 6.50081 30.8127L4.49857 18.0707H13.2717C13.866 18.0707 14.3478 17.5597 14.3478 16.9293C14.3478 16.2991 13.8661 15.788 13.2717 15.788C12.7996 15.788 2.83987 15.788 2.5109 15.788C2.31309 15.788 2.15222 15.6173 2.15222 15.4076V13.8858C2.15222 13.676 2.31316 13.5054 2.5109 13.5054H30.4892C30.687 13.5054 30.8478 13.6761 30.8478 13.8858V15.4076Z" fill="#FFFFFF"/>
+                    <path d="M10.0435 20.3532C9.44926 20.3532 8.96741 20.8642 8.96741 21.4946V28.3424C8.96741 28.9727 9.44919 29.4837 10.0435 29.4837C10.6378 29.4837 11.1196 28.9727 11.1196 28.3424V21.4945C11.1196 20.8642 10.6378 20.3532 10.0435 20.3532Z" fill="#FFFFFF"/>
+                    <path d="M16.5 20.3532C15.9057 20.3532 15.4239 20.8642 15.4239 21.4946V28.3424C15.4239 28.9727 15.9057 29.4837 16.5 29.4837C17.0943 29.4837 17.5761 28.9727 17.5761 28.3424V21.4945C17.5761 20.8642 17.0943 20.3532 16.5 20.3532Z" fill="#FFFFFF"/>
+                    <path d="M22.9565 20.3532C22.3622 20.3532 21.8804 20.8642 21.8804 21.4946V28.3424C21.8804 28.9727 22.3622 29.4837 22.9565 29.4837C23.5508 29.4837 24.0326 28.9727 24.0326 28.3424V21.4945C24.0326 20.8642 23.5508 20.3532 22.9565 20.3532Z" fill="#FFFFFF"/>
+                </svg>
+                <div>
+                    <p>25 396 грн</p>
+                    <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 0H0L3 3L6 0Z" fill="#FFFFFF"/>
+                    </svg>                    
+                </div>             
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+</html>
